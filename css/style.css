@@ -1,0 +1,150 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,600,700,800,900);
+
+
+body{
+	background: #fff;
+	font: 300 17px/1 Raleway, sans-serif;
+	color:  #262626;
+}
+
+header {
+	background: url(../img/bg-header.png);
+	background-size: cover;
+	height: 1087px;
+}
+
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1210px;
+	position: relative;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	text-decoration: none;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+	background: #f97b58;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+.ba-menu {
+	margin-top: 50px;
+}
+
+.ba-logo {
+	float: left;
+}
+
+.ba-nav {
+	float: right;
+	margin: 0;
+}
+
+.ba-nav li{
+	list-style: none;
+	display: inline-block;
+	// position: fixed;
+}
+
+.ba-nav__list {
+	padding-left: 30px;
+	margin: 13px 2px 0 0
+}
+
+.ba-nav__list a {
+	font: 700 16px/0.8 Raleway, sans-serif;
+	color:  #262626;
+}
+
+.ba-header__info {
+	padding-top: 249px;
+	width: 32%;
+}
+
+.ba-header__title {
+	font-size: 60px;
+	font-weight: 900;
+	margin: 0;
+}
+
+.ba-header__text {
+	padding-top: 24px;
+	font-size: 17px;
+	line-height: 1.3em;
+	margin: 0;
+}
+
+.ba-header__button {
+	margin: 37px 0 295px;
+	background-color:  #ff6033;
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+	padding: 19px 28px;
+	border: transparent;
+}
+
+.ba-header__button a {
+	color: #FFF;
+	font-size: 20px;
+}
+
+.ba-scroll {
+	display: block;
+	position: absolute;
+	// width: 20px;
+	// height: 20px;
+	// margin-top: 295px;
+	left: 50%;
+	top: 100%;
+	margin-bottom: 69px;
+}
+
+.ba-nav__list--active {
+	border: 2px solid transparent;
+}
+
+.ba-nav__list:active > .ba-nav__list--active {
+	visibility: visible;
+	border: 2px solid #ff6033;
+
+}
+
+
