@@ -7,13 +7,6 @@ body{
 	color:  #262626;
 }
 
-header {
-	background: url(../img/bg-header.png);
-	background-size: cover;
-	height: 1087px;
-}
-
-
 /* Layout */
 .ba-container{
 	padding-left: 20px;
@@ -66,8 +59,15 @@ textarea {
 
 }
 
+.ba-header {
+	background: url(../img/bg-header.png) 50% no-repeat;
+	background-size: cover;
+	// height: 1087px;
+	padding: 50px 0 404px;
+}
+
 .ba-menu {
-	margin-top: 50px;
+	// margin-top: 50px;
 }
 
 .ba-logo {
@@ -82,7 +82,7 @@ textarea {
 .ba-nav li{
 	list-style: none;
 	display: inline-block;
-	// position: fixed;
+
 }
 
 .ba-nav__list {
@@ -129,12 +129,11 @@ textarea {
 .ba-scroll {
 	display: block;
 	position: absolute;
-	// width: 20px;
-	// height: 20px;
-	// margin-top: 295px;
 	left: 50%;
-	top: 100%;
-	margin-bottom: 69px;
+	bottom: 69px;
+	width: 24px;
+	height: 40px;
+	background: url(../img/scroll.png);
 }
 
 .ba-nav__list--active {
@@ -144,7 +143,6 @@ textarea {
 .ba-nav__list:active > .ba-nav__list--active {
 	visibility: visible;
 	border: 2px solid #ff6033;
-
 }
 
 
