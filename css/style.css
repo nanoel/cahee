@@ -28,6 +28,7 @@ input[type="button"],
 button,
 .ba-button{
 	display: inline-block;
+	padding: 20px 27px;
 }
 input[type="submit"]:hover,
 input[type="button"]:hover,
@@ -62,12 +63,12 @@ textarea {
 .ba-header {
 	background: url(../img/bg-header.png) 50% no-repeat;
 	background-size: cover;
-	// height: 1087px;
-	padding: 50px 0 404px;
+
 }
 
 .ba-menu {
-	// margin-top: 50px;
+	padding-top: 47px;
+	margin-bottom: 252px;
 }
 
 .ba-logo {
@@ -75,8 +76,8 @@ textarea {
 }
 
 .ba-nav {
-	float: right;
-	margin: 0;
+	position: fixed;
+	right: 100px;
 }
 
 .ba-nav li{
@@ -86,8 +87,7 @@ textarea {
 }
 
 .ba-nav__list {
-	padding-left: 30px;
-	margin: 13px 2px 0 0
+	margin-right: 33px;
 }
 
 .ba-nav__list a {
@@ -95,30 +95,36 @@ textarea {
 	color:  #262626;
 }
 
-.ba-header__info {
-	padding-top: 249px;
-	width: 32%;
+.ba-nav__list--active {
+	border: 2px solid transparent;
 }
 
+.ba-nav__list:hover > .ba-nav__list--active {
+	visibility: visible;
+	border: 1.5px solid #ff6033;
+}
+
+.ba-header__info {
+	float: left;
+	width: 32%;
+}
 .ba-header__title {
 	font-size: 60px;
 	font-weight: 900;
-	margin: 0;
+	margin: 0 0 20px;
 }
 
 .ba-header__text {
-	padding-top: 24px;
 	font-size: 17px;
-	line-height: 1.3em;
-	margin: 0;
+	line-height: 1.5em;
+	margin: 0 0 30px;
 }
 
 .ba-header__button {
-	margin: 37px 0 295px;
 	background-color:  #ff6033;
 	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
-	padding: 19px 28px;
 	border: transparent;
+	margin-bottom: 404px;
 }
 
 .ba-header__button a {
@@ -128,21 +134,44 @@ textarea {
 
 .ba-scroll {
 	display: block;
-	position: absolute;
-	left: 50%;
-	bottom: 69px;
+	background: url(../img/scroll.png);
 	width: 24px;
 	height: 40px;
-	background: url(../img/scroll.png);
+	position: absolute;
+	left: 49%;
+	bottom: 71px;
 }
 
-.ba-nav__list--active {
-	border: 2px solid transparent;
+.ba-about {
+	background: url(../img/bg-about-us.png) 50% no-repeat;
+	background-size: cover;
+	padding: 165px 0 250px ;
 }
 
-.ba-nav__list:active > .ba-nav__list--active {
-	visibility: visible;
-	border: 2px solid #ff6033;
+.ba-about__img {
+	float: left;
+}
+
+.ba-about__info-block {
+	float: right;
+	width: 43%;
+}
+
+.ba-about__title {
+	color:  #ffffff;
+	font-size: 90px;
+	font-weight: 700;
+	line-height: 1;
+	margin: 0 0 16px;
+	padding: 0 0 3px;
+}
+
+.ba-about__text {
+	color:  #ffffff;
+	font-size: 17px;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0 0 0 3px;
 }
 
 
